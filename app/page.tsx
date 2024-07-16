@@ -12,6 +12,7 @@ export default function Home() {
 <br />
     <h1>mrrp</h1>
 <br />
+    <h1 className="py-10">im pretty bored tbh</h1>
     
     
     
