@@ -9,8 +9,8 @@ export function Provider({ children }) {
   const [value, setValue] = useState("Hello, world!");
 
   return (
-    <MyContext.Provider value={{ value, setValue }}>
+    <context.Provider value={{ value, setValue }}>
       {children}
-    </MyContext.Provider>
+    </context.Provider>
   );
 }
