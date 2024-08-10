@@ -6,13 +6,13 @@ export default function Home() {
       <main>
         <header className="flex flex-col justify-header items-center h-60">
         <h1 className="text-4xl ">
-            Pricklety's about page
+            Pricklety&apos;s about page
           </h1>
           <h1>(written by prick himself)</h1> 
         </header>
 
         <div className="flex flex-col items-center">
-        <h1>I'm a 17y/o game developer from Austria!</h1>
+        <h1>I&apos;m a 17y/o game developer from Austria!</h1>
 
             <h1>I made <a href="https://jammerdash.com" className="text-blue-400 underline" target="_blank">Jammer Dash</a></h1>
 
