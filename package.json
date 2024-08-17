@@ -12,6 +12,7 @@
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^6.26.0",
     "react-twitch-embed": "^3.0.2",
     "react-twitch-embed-video": "^3.1.0"
@@ -20,6 +21,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-helmet": "^6.1.11",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "postcss": "^8",
