@@ -10,7 +10,7 @@ export default function Home() {
  
       {/* Left Sidebar with Image */}
       <aside className="hidden md:flex flex-col items-center justify-center w-1/4 bg-black bg-opacity-40 text-white py-6 space-y-6 shadow-lg">
-        <h2 className="text-xl font-bold">Jammer Dash</h2>
+        <h2 className="text-xl font-bold">Jammer Dash (coming 2026)</h2>
         
         {/* Image with outline */}
         <div className="relative w-96 h-96 mb-4">
@@ -50,7 +50,13 @@ export default function Home() {
           {/* Bio Section */}
           <div className="bg-black bg-opacity-60 rounded-lg p-6 shadow-lg">
             <h1 className="text-2xl mb-4 font-semibold">About Me</h1>
-            <p>I&apos;m a 17-year-old game developer from Austria!</p>
+            <p>I&apos;m a 17-year-old game developer from{" "}
+            <a
+                href="https://en.wikipedia.org/wiki/Croatia"
+                className="text-blue-600 underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Croatia!</a></p>
             <p className="mt-4">
               I made{" "}
               <a
@@ -101,10 +107,10 @@ export default function Home() {
           {/* Favorites Section */}
           <div className="bg-black bg-opacity-60 rounded-lg p-6 shadow-lg space-y-4">
             <h1 className="text-2xl font-semibold mb-4">Favorites & Hobbies</h1>
-            <p><span className="font-bold">Favorite anime:</span> Bocchi the Rock!</p>
-            <p><span className="font-bold">Favorite music artist:</span> Little Big</p>
-            <p><span className="font-bold">Free time:</span> Messing around on the internet and playing keyboard</p>
-            <p><span className="font-bold">Work:</span> Game development</p>
+            <p><span className="font-bold">Favorite anime:{" "}</span><a href="https://en.wikipedia.org/wiki/Bocchi_the_Rock!" className="text-pink-400 underline" target="_blank" rel="noopener noreferrer">Bocchi the Rock!</a></p>
+            <p><span className="font-bold">Favorite music genre:{" "}</span><a href="https://en.wikipedia.org/wiki/J-pop" className="text-red-300 underline" target="_blank" rel="noopener noreferrer">J-Pop</a></p>
+            <p><span className="font-bold">Free time:{" "}</span>Playing instruments, playing games and learning <a href="https://en.wikipedia.org/wiki/Japanese_language" className="text-red-500 underline" target="_blank" rel="noopener noreferrer">Japanese</a></p>
+            <p><span className="font-bold">Work:{" "}</span> Game developer</p>
           </div>
         </div>
       </div>
