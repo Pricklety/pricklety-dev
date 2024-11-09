@@ -98,7 +98,7 @@ export default function Home() {
               <a href="https://instagram.com/pricklety" className="text-pink-500 underline hover:text-pink-300" target="_blank" rel="noopener noreferrer">
                 Instagram
               </a>
-              <a href="https://bsky.app/profile/pricklety.bsky.social" className="text-cyan-200 underline hover:text-cyan-100" target="_blank" rel="noopener noreferrer">
+              <a href="https://bsky.app/profile/jammerdash.com" className="text-cyan-200 underline hover:text-cyan-100" target="_blank" rel="noopener noreferrer">
               Bluesky
               </a>
             </div>
