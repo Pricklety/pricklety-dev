@@ -5,12 +5,8 @@ export default function Home() {
         <h1>meow</h1>
         <br />
         <h1 className="py-10 text-4xl">
-          coming soon. idk when. whenever i feel motivated...
+          Coming soon.
         </h1>
-        <br />
-        <h1>mrrp</h1>
-        <br />
-        <h1 className="py-10">im pretty bored tbh</h1>
       </div>
     </main>
   );

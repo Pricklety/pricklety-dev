@@ -1,4 +1,4 @@
-b0.5, the ENTIRE FUCKING CHANGELOG THING. 
+b0.5, the ENTIRE FUCKING CHANGELOG THINGY. 
 
 ## Game changes
 - Improved game performance
@@ -8,12 +8,15 @@ b0.5, the ENTIRE FUCKING CHANGELOG THING.
 - Basic public server profile thingy.
 - Intro sequence now has a short pause before starting, notifying it's an early access build.
 - Auto-import of levels
-- 10 new Languages
+- 10 new languages
 - Accounts
 - Skill points are now locally saved
 - File browser redesign
 - Visual indicators when shortcut keys are pressed
 - Public chat
+- Discord RPC Rework
+- Brand new theme song
+- New christmas song, Spring (shut up ik the name dont fit but idgaf)
 
 ## Audio changes
 - Made everything work on only 1 single source to improve performance. 
@@ -32,6 +35,7 @@ b0.5, the ENTIRE FUCKING CHANGELOG THING.
 - Local seasonal backgrounds
 - Tips/fun texts rework
 - Multiplayer panel is now accessible, but doesn't work.
+- 15 new backgrounds
 ### Hyperlink changes
 - Removed Newgrounds
 - Removed Twitch
@@ -39,11 +43,12 @@ b0.5, the ENTIRE FUCKING CHANGELOG THING.
 - Removed TikTok
 - Removed Instagram
 - Added GitHub
+- Added Bluesky
 ### Funny text changes
 - Added references to the following: UNDERTALE, Bocchi The Rock, Frieren: Beyond Journey's End, JoJo's Bizzare Adventures.
 - Fucked up my own humor. Help me.
 - Removed all osu! references.
-- More quotes from Pricklety's friends (They're all not paid to do this)
+- More quotes from Pricklety's friends (They're all not paid to do this lmaooooooo)
 
 ## Accessibility re-added
 - Blind mode
@@ -65,9 +70,9 @@ b0.5, the ENTIRE FUCKING CHANGELOG THING.
 - Level length limit is removed
 - Blind-mode (Not cheesable gameplay)
 - 7 new cube types: Drum, Hi-hat, Snare, Clap, Kick, Ride cymbal, Tom tom, Crash cymbal
-- The current gameplay cube is now a Percussion cube.
+- The current gameplay cube is now a hit cube.
 ### - The following IDs apply for the cubes:
-0 - Percussion
+0 - Hit
 1 - Long cube (Any SFX will be appliable)
 2 - Drum
 3 - Hi-hat
@@ -126,6 +131,3 @@ b0.5, the ENTIRE FUCKING CHANGELOG THING.
 - Fixed some input issues
 - Fixed the background visibility option not being fixed between 0-100
 - Fixed export crashing the game and not saving data if the level has a high object count
-
-
-THIS CHANGELOG IS STILL BOUND TO CHANGE

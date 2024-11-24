@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "About dev",
-  description: "Website about the dev of Jammer Dash",
+  title: "Jammer Dash",
+  description: "Official website - Jammer Dash",
 };
 
 export default function RootLayout({
