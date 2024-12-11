@@ -1,10 +1,9 @@
 
-import './globals.css';
 
 const App: React.FC = () => {
     return (
         <div className="homepage">
-
+ 
           
             <header className="header">
                 <div className="logo">

@@ -1,15 +1,12 @@
 import Image from 'next/image';
-
+import './about.css';
 export default function Home() {
   return (
     <main className="relative h-screen w-full flex">
-      {/* Background Image with opacity */}
-      <div className="absolute inset-0 z-0">
-        <div className="w-full h-full bg-cover bg-center opacity-20" style={{ backgroundImage: `url('/basic.png')` }} />
-      </div>
+      
  
       {/* Left Sidebar with Image */}
-      <aside className="hidden md:flex flex-col items-center justify-center w-1/4 bg-black bg-opacity-40 text-white py-6 space-y-6 shadow-lg">
+      <aside className="hidden md:flex flex-col items-center justify-center w-1/4 text-white py-6 space-y-6">
         <h2 className="text-xl font-bold">Jammer Dash (coming 2026)</h2>
         
         {/* Image with outline */}
@@ -33,9 +30,9 @@ export default function Home() {
             {/* Profile Picture */}
             <div className="relative w-16 h-16 mr-4">
               <Image
-                src="/profile-pic.png" // Path to your profile picture in the public folder
+                src="/profile-pic.png" 
                 alt="Profile Picture"
-                className="rounded-full border-4 border-white shadow-lg"
+                className="rounded-lg border-2 border-black shadow-full"
                 width={64} // Adjusted width for the profile picture
                 height={64} // Adjusted height for the profile picture
               />
@@ -48,12 +45,12 @@ export default function Home() {
           </header>
 
           {/* Bio Section */}
-          <div className="bg-black bg-opacity-60 rounded-lg p-6 shadow-lg">
+          <div className="bg-black bg-opacity-40 rounded-lg p-6 shadow-lg">
             <h1 className="text-2xl mb-4 font-semibold">About Me</h1>
             <p>I&apos;m a 17-year-old game developer from{" "}
             <a
                 href="https://en.wikipedia.org/wiki/Croatia"
-                className="text-blue-600 underline"
+                className="text-blue-400 underline"
                 target="_blank"
                 rel="noopener noreferrer"
               >Croatia!</a></p>
@@ -70,7 +67,7 @@ export default function Home() {
               and I also occasionally stream on{" "}
               <a
                 href="https://twitch.tv/kaiyuuku"
-                className="text-purple-800 underline"
+                className="text-purple-500 underline"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -80,7 +77,7 @@ export default function Home() {
           </div>
 
           {/* Links Section */}
-          <div className="bg-black bg-opacity-60 rounded-lg p-6 shadow-lg">
+          <div className="bg-black bg-opacity-40 rounded-lg p-6 shadow-lg">
             <h1 className="text-2xl font-semibold mb-4">Links</h1>
             <div className="grid grid-cols-2 gap-2">
               <a href="https://youtube.com/@Pricklety" className="text-red-500 underline hover:text-red-300" target="_blank" rel="noopener noreferrer">
@@ -89,7 +86,7 @@ export default function Home() {
               <a href="https://discord.gg/CCQKHtQefy" className="text-blue-400 underline hover:text-blue-200" target="_blank" rel="noopener noreferrer">
                 Discord - Jammer Dash
               </a>
-              <a href="https://twitch.tv/prickletylive" className="text-purple-800 underline hover:text-purple-600" target="_blank" rel="noopener noreferrer">
+              <a href="https://twitch.tv/prickletylive" className="text-purple-500 underline hover:text-purple-600" target="_blank" rel="noopener noreferrer">
                 Twitch
               </a>
               <a href="https://x.com/pricklety" className="text-cyan-300 underline hover:text-cyan-100" target="_blank" rel="noopener noreferrer">
@@ -105,19 +102,19 @@ export default function Home() {
           </div>
 
           {/* Favorites Section */}
-          <div className="bg-black bg-opacity-60 rounded-lg p-6 shadow-lg space-y-4">
+          <div className="bg-black bg-opacity-40 rounded-lg p-6 shadow-lg space-y-4">
             <h1 className="text-2xl font-semibold mb-4">Favorites & Hobbies</h1>
             <p><span className="font-bold">Favorite anime:{" "}</span><a href="https://en.wikipedia.org/wiki/Bocchi_the_Rock!" className="text-pink-400 underline" target="_blank" rel="noopener noreferrer">Bocchi the Rock!</a></p>
             <p><span className="font-bold">Favorite music genre:{" "}</span><a href="https://en.wikipedia.org/wiki/J-pop" className="text-red-300 underline" target="_blank" rel="noopener noreferrer">J-Pop</a></p>
-            <p><span className="font-bold">Free time:{" "}</span>Playing instruments, playing games and learning <a href="https://en.wikipedia.org/wiki/Japanese_language" className="text-red-500 underline" target="_blank" rel="noopener noreferrer">Japanese</a></p>
+            <p><span className="font-bold">Free time:{" "}</span>Playing instruments, playing games and learning <a href="https://en.wikipedia.org/wiki/Japanese_language" className="text-red-400 underline" target="_blank" rel="noopener noreferrer">Japanese</a></p>
             <p><span className="font-bold">Work:{" "}</span> Game developer</p>
           </div>
         </div>
       </div>
 
       {/* Right Sidebar */}
-      <aside className="hidden md:flex flex-col items-center justify-center w-1/4 bg-black bg-opacity-40 text-white py-6 space-y-6 shadow-lg">
-        <h2 className="text-xl font-bold">Coming soon</h2>
+      <aside className="hidden md:flex flex-col items-center justify-center w-1/4 text-white py-6 space-y-6">
+        <h2 className="text-xl font-bold">Latest blog updates: Coming soon</h2>
       </aside>
     </main>
   );
