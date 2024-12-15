@@ -7,8 +7,14 @@ export default function Home() {
  
       {/* Left Sidebar with Image */}
       <aside className="hidden md:flex flex-col items-center justify-center w-1/4 text-white py-6 space-y-6">
-        <h2 className="text-xl font-bold">Jammer Dash (coming 2026)</h2>
-        
+        <h2 className="text-xl font-bold">Featured project:</h2>
+        {" "}
+        <a
+                href="https://jammerdash.com"
+                className="text-blue-400 underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Jammer Dash (coming 2026)</a>
         {/* Image with outline */}
         <div className="relative w-96 h-96 mb-4">
           <Image
@@ -114,7 +120,11 @@ export default function Home() {
 
       {/* Right Sidebar */}
       <aside className="hidden md:flex flex-col items-center justify-center w-1/4 text-white py-6 space-y-6">
-        <h2 className="text-xl font-bold">Latest blog updates: Coming soon</h2>
+        <h2 className="text-xl font-bold">Latest blog updates</h2>
+        
+        <a href="pricklety/blog" className="text-purple-800 underline hover:text-cyan-100" target="_blank" rel="noopener noreferrer">
+              read more...
+              </a>
       </aside>
     </main>
   );
