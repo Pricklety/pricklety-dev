@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #FFF;
+}
+
+header p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #FFF;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* Creates 4 equal-width columns */
+    gap: 40px;  /* Space between the grid items */
+    padding: 0px;
+    margin: 0 auto;
+    max-width: 1350px;
+    box-sizing: border-box;
+}
+
+.card {
+    background: #f9f9f9;
+    border: 3px solid;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.card .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.card h3.name {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: inherit;
+    text-align: right;  /* Align name to the left */
+    position: absolute;
+    top: 15px;  /* Adjust to make it closer to the profile picture */
+    left: 120px;  /* Adjust for the positioning of the name */
+}
+
+.card h3.date {
+    margin: 0;
+    font-size: 12px;
+    color: #FFF;
+    text-align: right;  /* Align name to the left */
+    position: absolute;
+    top: 60px;
+    left: 120px;
+}
+
+.profile {
+    display: flex;
+    position: absolute;
+}
+
+.profile-image {
+    width: 90px;
+    height: 90px;
+    margin-right: 512px;
+}
+
+.flag {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: inherit;
+    position: absolute;
+    top: 15px;  /* Adjust to make it closer to the profile picture */
+    left: 120px;
+    width: 32px;
+    height: 20px;
+    object-fit: contain;
+    margin-top: 25px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.8;
+}

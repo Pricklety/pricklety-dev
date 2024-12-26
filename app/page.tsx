@@ -17,6 +17,7 @@ const App: React.FC = () => {
                     <li><a href="https://jammerdash.fandom.com">wiki</a></li>
                     <li><a href="#community" className="disabled">community</a></li>
                     <li><a href="https://shop.jammerdash.com">store</a></li> 
+                    <li><a href="./featured_artists">music artists</a></li>
                     <li><a href="./info/game">info</a></li> 
                 </ul>
                 </nav>
