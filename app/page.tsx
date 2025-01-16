@@ -34,7 +34,7 @@ const App: React.FC = () => {
                     <div className="download-buttons">
                         <a href="https://github.com/Pricklety/Jammer-Dash/releases/latest" className="button windows">Download (Windows and Linux)</a>
                     </div>
-                    <p className="subtitle">Note: Linux requires Wine</p>
+                    <p className="subtitle">Note: Linux requires Proton GE 9.22</p>
                 </div>
 
                 
