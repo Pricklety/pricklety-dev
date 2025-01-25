@@ -78,7 +78,7 @@ const Main = () => {
                 <p>Hey there!</p>
               </div>
               <div className="news-item">
-                <h3>nothing. really. that's it.</h3>
+                <h3>nothing. really. that&apos;s it.</h3>
                 <p>gg</p>
               </div>
             </section>
