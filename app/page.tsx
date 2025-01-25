@@ -1,72 +1,127 @@
+'use client';
+import React, { useState, useEffect } from "react";
+import "./globals.css";
 
-
-const App: React.FC = () => {
-    return (
-        <div className="homepage">
- 
-          
-            <header className="header">
-                <div className="logo">
-                    <img src="/logo.png" alt="Jammer Dash Logo" />
-                </div>
-                <nav className="nav"> 
-                  <ul>
-                    <li><a href="#features">features</a></li>
-                    <li><a href="./levels" className="disabled">levels</a></li>
-                    <li><a href="./leaderboard" className="disabled">triumph</a></li>
-                    <li><a href="https://jammerdash.fandom.com">wiki</a></li>
-                    <li><a href="#community" className="disabled">community</a></li>
-                    <li><a href="https://shop.jammerdash.com">store</a></li> 
-                    <li><a href="./featured_artists">music artists</a></li>
-                    <li><a href="./info/game">info</a></li> 
-                </ul>
-                </nav>
-            </header>
-            
-            <section className="hero">
-                
-                <div className="hero-content">
-                  <div className="hero-logo">
-                    <img src="/logo.png" alt="Jammer Dash Logo" />
-                </div>
-                    <h1 className="title">Jammer Dash</h1>
-                    <p className="subtitle">Destroy objects to the beat in this free 2D rhythm game!</p>
-                    <div className="download-buttons">
-                        <a href="https://github.com/Pricklety/Jammer-Dash/releases/latest" className="button windows">Download (Windows and Linux)</a>
-                    </div>
-                    <p className="subtitle">Note: Linux requires Proton GE 9.22</p>
-                </div>
-
-                
-            </section>
-
-            <section id="features" className="features">
-                <h2>Features</h2>
-                <div className="feature-list">
-                    <div className="feature">
-                        <h3>Rhythm-Based Gameplay</h3>
-                        <p>Move and destroy objects on the beat to rack up points!</p>
-                    </div>
-                    <div className="feature">
-                        <h3>Vibrant Art Style</h3>
-                        <p>Inspired by games like Muse Dash, Geometry Dash, and osu!, with anime-style visuals.</p>
-                    </div>
-                    <div className="feature">
-                        <h3>Customizable Tracks</h3>
-                        <p>Play with your own music tracks or explore new ones!</p>
-                    </div>
-                </div>
-            </section>
-
-            <footer className="footer">
-                <div className="social-media">
-                    <a href="https://twitter.com/JammerDash" target="_blank" rel="noopener noreferrer">Twitter</a>
-                    <a href="https://discord.gg/CCQKHtQefy" target="_blank" rel="noopener noreferrer">Discord</a>
-                </div>
-                <p>© 2024 Jammer Dash. All rights reserved.</p>
-            </footer>
+// Header Component
+const Header = () => {
+  return (
+    <header className="header"> 
+    <div className="logo">
+          <img src="logo.png" alt="Logo" />
         </div>
-    );
-}
+    <nav className="nav">
+      <a href="/">
+        
+      </a>
+      <ul className="nav-links">
+        <li><a href="https://jammerdash.fandom.com">wiki</a></li>
+        <li><a href="https://shop.jammerdash.com">store</a></li>
+        <li><a href="#">triumph</a></li>
+        <li><a href="#">levels</a></li>
+        <li><a href="/featured_artists">musicians</a></li>
+        <li><a href="#">forums</a></li>
+        <li><a href="/info/game">info</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  );
+};
+
+// UserStats Component to fetch data
+const UserStats = () => {
+  const [stats, setStats] = useState({
+    totalUsers: 0
+  });
+
+  useEffect(() => {
+    // Fetch data from API
+    const fetchUserStats = async () => {
+      try {
+        const response = await fetch('https://api.jammerdash.com/v1/account/users');
+        const data = await response.json();
+
+        // Assuming the API returns an object with the stats:
+        setStats({
+          totalUsers: data.users || 0
+        });
+      } catch (error) {
+        console.error("Error fetching user stats:", error);
+      }
+    };
+
+    fetchUserStats();
+  }, []);  // Empty dependency array to fetch data once when component mounts
+
+  return (
+    <div className="stats">
+      <h3>User Stats</h3>
+      <p>Total Users: {stats.totalUsers}</p>
+      <p>Multiplayer Games Online: 0</p>
+      <p>Online Users: 0</p>
+    </div>
+  );
+};
+
+// Main Component
+const Main = () => {
+    return (
+        <main>
+          <div className="content">
+            {/* Background Video */}
+            <video className="background-video" src="video.mp4" autoPlay loop muted />
+            
+            <section className="news">
+              <h2>News</h2>
+              <div className="news-item">
+                <h3>Welcome to Jammer Dash!</h3>
+                <p>Hey there!</p>
+              </div>
+              <div className="news-item">
+                <h3>nothing. really. that's it.</h3>
+                <p>gg</p>
+              </div>
+            </section>
+            <aside className="sidebar">
+              {/* Add UserStats Component Here */}
+              <UserStats />
+              
+              <div className="buttons">
+                <button className="button windows">
+                  <a href="https://github.com/Pricklety/Jammer-Dash/releases/latest">Download Jammer Dash</a>
+                </button>
+                <button className="button linux">
+                  <a href="https://shop.jammerdash.com">Support Jammer Dash</a>
+                </button>
+              </div>
+            </aside>
+          </div>
+        </main>
+      );
+    }      
+// Footer Component
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <p>© 2025 Pricklety. All rights reserved.</p>
+      <div className="social-media">
+        <a href="https://twitter.com/JammerDash">Twitter</a>
+        <a href="mailto:support@jammerdash.com">Support mail</a>
+        <a href="https://discord.gg/CCQKHtQefy">Discord</a>
+      </div>
+    </footer>
+  );
+};
+
+// App Component
+const App = () => {
+  return (
+    <div>
+      <Header />
+      <Main />
+      <Footer />
+    </div>
+  );
+};
 
 export default App;
