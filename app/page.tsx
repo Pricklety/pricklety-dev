@@ -4,7 +4,7 @@ import "./globals.css";
 
 // Header Component
 const Header = () => {
-  return (
+  return ( 
     <header className="header"> 
     <div className="logo">
           <img src="logo.png" alt="Logo" />
