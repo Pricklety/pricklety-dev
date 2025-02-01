@@ -52,7 +52,7 @@ export default function Home() {
                 Twitch
               </a>
               
-              <p className="mt-4">I was born on the 15th of September, 2007 in Zagreb, Croatia, and I've since been doing absolutely nothing.</p>
+              <p className="mt-4">I was born on the 15th of September, 2007 in Zagreb, Croatia, and I&apos;ve since been doing absolutely nothing.</p>
               <p className='mt-4'>I love Ryo Yamada from Bocchi the Rock, and I love Frieren, Azumanga, languages, geography etc etc</p>
               <p className='mt-4'>I currently live in Sankt Veit an der Glan, Austria; but I plan to move to Tokyo, Japan in the future (atleast by 2035)</p>
               <p className="mt-4">My favorite food is Lasagna (and Sushi) and my favorite drink is Cedevita (you must have this)</p>
