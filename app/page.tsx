@@ -86,12 +86,8 @@ const Main = () => {
               <UserStats />
               
               <div className="buttons">
-                <button className="button windows">
-                  <a href="https://github.com/Pricklety/Jammer-Dash/releases/latest">Download Jammer Dash</a>
-                </button>
-                <button className="button linux">
-                  <a href="https://shop.jammerdash.com">Support Jammer Dash</a>
-                </button>
+                  <a href="https://github.com/Pricklety/Jammer-Dash/releases/latest"><button className="button windows">Download Jammer Dash</button></a>
+                  <a href="https://shop.jammerdash.com"><button className="button linux">Support Jammer Dash</button></a>
               </div>
             </aside>
           </div>
