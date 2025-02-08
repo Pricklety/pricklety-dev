@@ -28,30 +28,29 @@ const Header = () => {
   );
 };
 
-// UserStats Component to fetch data
 const UserStats = () => {
   const [stats, setStats] = useState({
     totalUsers: 0
   });
 
   useEffect(() => {
-    // Fetch data from API
     const fetchUserStats = async () => {
       try {
         const response = await fetch('https://api.jammerdash.com/v1/account/users');
         const data = await response.json();
-
-        // Assuming the API returns an object with the stats:
+  
+        // Ensure totalUsers is a valid number
         setStats({
-          totalUsers: data.users || 0
+          totalUsers: Array.isArray(data.users) ? data.users.length : 0
         });
       } catch (error) {
         console.error("Error fetching user stats:", error);
       }
     };
-
+  
     fetchUserStats();
-  }, []);  // Empty dependency array to fetch data once when component mounts
+  }, []);
+
 
   return (
     <div className="stats">
