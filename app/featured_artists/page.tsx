@@ -12,6 +12,14 @@ const gridItems = [
         { url: "https://www.youtube.com/channel/UCq46YHdEUysXLzgznOuO9EA", icon: "icons/youtube.svg" } 
       ]
     },
+    {
+      name: "Proship Ashton", country: "United States", code: "US", tier: "green", dateAdded: "02-15-2025", followerCount: 0,
+      image: "https://pbs.twimg.com/profile_images/1799842361519849472/mfT2zq1y_400x400.jpg",
+      links: [
+        { url: "https://x.com/eimikor34__", icon: "icons/twitter.svg" },
+        { url: "https://www.youtube.com/@proshipashton", icon: "icons/youtube.svg" }
+      ]
+    },
     { 
       name: "NikoN1nja", country: "Russia", code: "RU", tier: "green", dateAdded: "02-17-2024", followerCount: 0, 
       image: "https://cdn.discordapp.com/avatars/660855661394919434/5e902f822b56bc0bd03b51e01c3903b7.png?size=1024", 
