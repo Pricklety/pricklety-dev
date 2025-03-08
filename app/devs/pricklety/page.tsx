@@ -56,7 +56,7 @@ export default function Home() {
               <p className='mt-4'>My favorite character is Ryo Yamada from Bocchi the Rock, and I love Frieren, Azumanga, languages, geography etc etc</p>
               <p className='mt-4'>I currently live in Sankt Veit an der Glan, Austria; but I plan to move to Tokyo, Japan in the future (atleast by 2035)</p>
               <p className="mt-4">My favorite food is Lasagna (and Sushi) and my favorite drink is Cedevita (you must have this)</p>
-              <p className='mt-4'>My setup (as of March 2025) consists of one laptop, a headset with a broken mic, and that's all.  </p>
+              <p className='mt-4'>My setup (as of March 2025) consists of one laptop, a headset with a broken mic, and that&apos;s all.  </p>
               <p className="mt-2 text-xs/3">pronouns: any/all (i don&apos;t really care), sexuality: straight</p>
             </p>
           </div>
