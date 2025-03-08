@@ -53,10 +53,11 @@ export default function Home() {
               </a>
               
               <p className="mt-4">I was born on the 15th of September, 2007 in Zagreb, Croatia, and I&apos;ve since been doing absolutely nothing.</p>
-              <p className='mt-4'>I love Ryo Yamada from Bocchi the Rock, and I love Frieren, Azumanga, languages, geography etc etc</p>
+              <p className='mt-4'>My favorite character is Ryo Yamada from Bocchi the Rock, and I love Frieren, Azumanga, languages, geography etc etc</p>
               <p className='mt-4'>I currently live in Sankt Veit an der Glan, Austria; but I plan to move to Tokyo, Japan in the future (atleast by 2035)</p>
               <p className="mt-4">My favorite food is Lasagna (and Sushi) and my favorite drink is Cedevita (you must have this)</p>
-              <p className="mt-2 text-xs/3">pronouns: any/all, sexuality: straight</p>
+              <p className='mt-4'>My setup (as of March 2025) consists of one laptop, a headset with a broken mic, and that's all.  </p>
+              <p className="mt-2 text-xs/3">pronouns: any/all (i don&apos;t really care), sexuality: straight</p>
             </p>
           </div>
 
@@ -73,13 +74,10 @@ export default function Home() {
               <a href="https://twitch.tv/prickletyy" className="text-purple-500 underline hover:text-purple-600" target="_blank" rel="noopener noreferrer">
                 Twitch
               </a>
-              <a href="https://x.com/pricklety" className="text-cyan-300 underline hover:text-cyan-100" target="_blank" rel="noopener noreferrer">
-                Twitter
-              </a>
               <a href="https://bsky.app/profile/jammerdash.com" className="text-cyan-200 underline hover:text-cyan-100" target="_blank" rel="noopener noreferrer">
               Bluesky
               </a>
-              <a>My Discord: @pricklety</a>
+              <a>Discord: @pricklety</a>
             </div>
           </div>
 
@@ -87,18 +85,14 @@ export default function Home() {
           <div className="bg-black bg-opacity-40 rounded-lg p-6 shadow-lg space-y-4">
             <h1 className="text-2xl font-semibold mb-4">Favorites & Hobbies</h1>
             <p><span className="font-bold">Favorite anime:{" "}</span><a href="https://en.wikipedia.org/wiki/Bocchi_the_Rock!" className="text-pink-400 underline" target="_blank" rel="noopener noreferrer">Bocchi the Rock!</a></p>
-            <p><span className="font-bold">Favorite music genre:{" "}</span><a href="https://en.wikipedia.org/wiki/J-pop" className="text-red-300 underline" target="_blank" rel="noopener noreferrer">J-Pop</a></p>
-            <p><span className="font-bold">Free time:{" "}</span>Playing instruments, playing games and learning <a href="https://en.wikipedia.org/wiki/Japanese_language" className="text-red-400 underline" target="_blank" rel="noopener noreferrer">Japanese</a></p>
+            <p><span className="font-bold">Favorite music genre and artists:{" "}</span><a href="https://en.wikipedia.org/wiki/J-pop" className="text-red-300 underline" target="_blank" rel="noopener noreferrer">J-Pop</a> (Ado, Giga, Reol)</p>
+            <p><span className="font-bold">Free time:{" "}</span>Playing instruments, playing games and learning <a href="https://en.wikipedia.org/wiki/Japanese_language" className="text-red-400 underline" target="_blank" rel="noopener noreferrer">Japanese</a> (currently mid-N5)</p>
             <p><span className="font-bold">Work:{" "}</span> Game developer</p>
           </div>
           <div className="bg-black bg-opacity-40 rounded-lg p-6 shadow-lg space-y-4">
             <h1 className="text-2xl font-semibold mb-4">Friends (their discord @) (i love you guys)</h1>
-            <p>monpipi (mon)</p>
             <p>d_i_m_i (dimi)</p>
             <p>froggo4369 (frog)</p>
-            <p>glitchedsg (glitch)</p>
-            <p>ameameame (defframe)</p>
-            <p>nlkku (konro)</p>
             <p>emajakobitch (ema)</p>
             <p>randomdev06 (random)</p>
             </div>
