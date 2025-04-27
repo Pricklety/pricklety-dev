@@ -4,6 +4,13 @@ import './App.css';
 
 const gridItems = [
     // Green FAs
+    {
+      name: "Ari", country: "United States", code: "US", tier: "green", dateAdded: "04-27-2025", followerCount: 0,
+      image: "",
+      links: [
+        { url: "https://x.com/entitygmd?s=21", icon: "icons/twitter.svg" }
+      ]
+    },
     { 
       name: "Javiere Inniss", country: "United States", code: "US", tier: "green", dateAdded: "04-28-2024", followerCount: 0, 
       image: "https://pbs.twimg.com/profile_images/1734055131476275200/bbiRoUOi_200x200.jpg", 
